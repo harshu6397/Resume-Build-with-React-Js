@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+input{
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:hover{
+    border: 1px solid #aaaaaa;
+}
+
+input:focus{
+    border: 1px solid var(--theme-dark);
+}

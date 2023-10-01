@@ -1,0 +1,139 @@
+.container{
+    min-width: 550px;
+    min-height: 450px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    height: fit-content;
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header::-webkit-scrollbar{ 
+    height: 7px;
+}
+
+.header::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #c7c7c7;
+}
+
+.header .section {
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.header .active {
+    border-bottom: 2px solid var(--theme-dark);
+    color: var(--theme-dark);
+}
+
+.body{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 0;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.details .row{
+    display: flex;
+    gap: 20px;
+}
+
+.details .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details .row > div{
+    flex: 1;
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.chip{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background-color: #808080;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.chip p{
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #fff;
+}
+
+.chip svg{
+    color: #fff;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.chips .active{
+    background-color: var(--theme-dark);
+}
+
+.chips .new{
+    color: var(--theme-dark);
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.button{
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--theme-dark);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: 250ms;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);   
+}
+
+.button:hover{
+    background-color: rgb(190, 50, 190);
+    color: black;
+}
+
+.button:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
